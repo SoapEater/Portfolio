@@ -108,13 +108,11 @@ document.addEventListener("DOMContentLoaded", function () {
       afterString: async (instance) => {
         compBeep.pause();
       },
-    })
-
-    .go();
+    }).go();
   }
 
   function removeBtn() {
-    btnAccess.remove();
+    btnAccess.style.display = 'none';
   }
   //-------------------------------------------------------------------------------//
   btnAccess.addEventListener("click", introTyper);
