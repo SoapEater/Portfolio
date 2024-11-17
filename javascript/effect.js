@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
 
       afterComplete: async (instance) => {
+        typeItInstance.destroy()
         profileTyper();
       },
     })
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .exec(() => {
         compBeep.play();
       })
-      .type("ACCESSING MR BARAQUIL'S PROFILE CONFIRMED")
+      .type("ACCESSING MR BARAQUIL'S PROFILE AUTHORIZED")
       .pause(2000)
       .empty()
       .go();
@@ -85,9 +86,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function profileTyper() {
     var text = [
-      "---------------------------",
+      '---------------------------',
       'rehum d. baraquil',
-      "---------------------------",
+      '---------------------------',
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce in erat eget ipsum euismod ultricies a vel justo. Integer auctor consectetur molestie. Aliquam a justo nec felis rutrum ultricies vel id velit. Sed viverra sapien neque, ac dignissim orci porta semper. Aliquam porttitor placerat scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ultricies sit amet tortor in bibendum. Sed vel augue facilisis, vulputate nibh fermentum, mattis leo. Phasellus dignissim elit massa, ut venenatis magna gravida a. Duis rhoncus lobortis placerat. Aliquam vitae nulla ac nisi tempor convallis id vitae felis. Ut leo enim, maximus nec scelerisque nec, ornare vel elit. Aliquam non sem mollis, tristique odio id, dictum purus. Integer sit amet neque vel justo pharetra mollis quis sed ante. Praesent id risus ac ipsum vulputate bibendum vitae et leo. Nam at gravida mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque luctus faucibus nisl. Nullam metus leo, fermentum nec scelerisque eget, pellentesque at odio. Fusce ultricies porta risus, non rhoncus est maximus sed. Sed eget dui magna. Vivamus finibus commodo massa ac aliquet. Pellentesque accumsan lacinia eros sed faucibus. Sed interdum lacus sit amet quam efficitur finibus. Nunc a facilisis ligula. Suspendisse malesuada pulvinar pretium.",
     ];
     text = text.map(function (x) {
