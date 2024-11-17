@@ -1,6 +1,6 @@
 @font-face{
     font-family: fixedsys;
-    src: url(font/FSEX300.ttf);
+    src: url(../font/FSEX300.ttf);
 }
 
 @keyframes flicker{
@@ -150,7 +150,7 @@
     left: 0;
     right: 0;
     border: 30px solid transparent;
-    border-image: url(src/bezel.png) 30 stretch;
+    border-image: url(../src/bezel.png) 30 stretch;
 }
 
 .scanline{
