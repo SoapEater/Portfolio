@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   //-------------------------------------------------------------------------------//
-  const typeSfx = new Audio("/src/keyboard-mechnical-sfx.mp3");
-  const compBeep = new Audio("/src/computer-process-sfx.mp3");
+  const typeSfx = new Audio("./src/keyboard-mechnical-sfx.mp3");
+  const compBeep = new Audio("./src/computer-process-sfx.mp3");
   const btnAccess = this.getElementById("btnAccess");
   const profile = this.getElementById("profile");
 

@@ -1,6 +1,6 @@
 @font-face{
     font-family: fixedsys;
-    src: url(/font/FSEX300.ttf);
+    src: url(./font/FSEX300.ttf);
 }
 
 @keyframes flicker{
@@ -150,7 +150,7 @@
     left: 0;
     right: 0;
     border: 30px solid transparent;
-    border-image: url(/src/bezel.png) 30 stretch;
+    border-image: url(./src/bezel.png) 30 stretch;
 }
 
 .scanline{
@@ -196,56 +196,3 @@ header{
     cursor: pointer;
     border: none;
 }
-
-/* ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-#monitor{
-    height: 100%;
-    width: auto;
-    background-color: #0b261a;
-}
-
-#bezel{
-    height: 100vh;
-    position: relative;
-    border: 30px solid transparent;
-    border-image: url(/src/bezel.png) 30 stretch;
-    border-image-outset: -10px;
-}
-
-#terminal{
-    font-size: 2.5rem;
-    font-family: fixedsys;
-    color: #22b55f;
-    text-shadow: 0 0 20px #1da455;
-    line-height: 75px;
-    height: 300px;
-}
-
-.header h1{
-    text-align: center;
-    font-size: 2.5rem;
-}
-
-#btnAccess{
-    font-size: 2.5rem;
-    font-family: inherit;
-    color: #22b55f;
-    background-color: transparent;
-    text-shadow: 0 0 20px #1da455;
-    cursor: pointer;
-    border: none;
-}
-
-#profile{
-    display: none;
-    text-transform: uppercase;
-}
-
-.header, #boot, #profile{
-    padding-left: 50px;
-    padding-right: 50px;
-} */
