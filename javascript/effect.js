@@ -135,21 +135,21 @@ document.addEventListener("DOMContentLoaded", function ()
                 {
                     menuContent.style.display = "none";
                     content.style.display = "block";
-                    contentTyper('../src/txt/profile.txt');
+                    contentTyper('./src/txt/profile.txt');
                 });
 
                 skillBtn.addEventListener("click", function()
                 {
                     menuContent.style.display = "none";
                     content.style.display = "block";
-                    contentTyper('../src/txt/skills.txt');
+                    contentTyper('./src/txt/skills.txt');
                 });
 
                 aboutPortBtn.addEventListener("click", function()
                 {
                     menuContent.style.display = "none";
                     content.style.display = "block";
-                    contentTyper('../src/txt/portfolio.txt');
+                    contentTyper('./src/txt/portfolio.txt');
                 });
             },
         })
