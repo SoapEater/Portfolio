@@ -1,9 +1,11 @@
-@font-face{
+@font-face
+{
     font-family: fixedsys;
     src: url(../font/FSEX300.ttf);
 }
 
-@keyframes flicker{
+@keyframes flicker
+{
     0% {
     opacity: 0.27861;
     }
@@ -69,7 +71,8 @@
     }
 }
 
-@keyframes scanline{
+@keyframes scanline
+{
     0% {
         bottom: 100%;
     }
@@ -81,7 +84,8 @@
     }
 }
 
-@keyframes type{
+@keyframes type
+{
     0%{
         width: 0;
     }
@@ -95,7 +99,8 @@
     }
 }
 
-.crt:before{
+.crt:before
+{
     content: " ";
     display: block;
     position: absolute;
@@ -113,7 +118,8 @@
     pointer-events: none;
 }
 
-.crt::after{
+.crt::after
+{
     content: " ";
     display: block;
     position: absolute;
@@ -128,12 +134,14 @@
     animation: flicker 0.15s infinite;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar
+{
     width: 0px;
     background: transparent;
 }
 
-.monitor{
+.monitor
+{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -143,7 +151,8 @@
     background-color: #0b261a;
 }
 
-.bezel{
+.bezel
+{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -153,7 +162,8 @@
     border-image: url(../src/bezel.png) 30 stretch;
 }
 
-.scanline{
+.scanline
+{
     z-index: 8;
     background: linear-gradient(    0deg,    rgba(0, 0, 0, 0) 0%,    rgba(255, 255, 255, 0.2) 10%,    rgba(0, 0, 0, 0.1) 100%);
     opacity: 0.1;
@@ -164,35 +174,88 @@
     bottom: 100%;
     animation: scanline 10s linear infinite;
     -webkit-animation: scanline 10s linear infinite;
+    pointer-events: none;
 }
 
-.terminal{
+.terminal
+{
     position: absolute;
     top: -10px;
     bottom: -10px;
     left: -10px;
     right: -10px;
-    font-size: 2.5rem;
+    font-size: 2rem;
     overflow: scroll;
     word-wrap: break-word;
     margin: 10px;
-    padding: 10px;
+    padding: 10px 50px 10px 50px;
     font-family: fixedsys;
     color: #22b55f;
     text-shadow: 0 0 20px #1da455;
-    line-height: 75px;
+    line-height: 50px;
 }
 
-header{
+header
+{
     text-align: center;
 }
 
-#btnAccess{
-    font-size: 2.5rem;
+#btnAccess, #menu button, #content button
+{
+    font-size: 2rem;
     font-family: inherit;
     color: #22b55f;
     background-color: transparent;
     text-shadow: 0 0 20px #1da455;
     cursor: pointer;
     border: none;
+}
+
+#btnAccess:hover, #menu button:hover, #content button:hover
+{
+    color: #dddddd;
+    background-color: #1da455;
+    box-shadow: 0 0 10px 5px #1da455;
+}
+
+@media (min-width: 2560px)
+{
+    .terminal, #btnAccess, #menu button, #content button
+    {
+        font-size: 3rem;
+    }
+
+    .terminal
+    {
+        padding: 10px 70px 10px 70px;
+        line-height: 80px;
+    }
+}
+
+@media (max-width: 720px)
+{
+    .terminal, #btnAccess, #menu button, #content button
+    {
+        font-size: 1.5rem;
+    }
+
+    .terminal
+    {
+        padding: 10px 30px 10px 30px;
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 420px)
+{
+    .terminal, #btnAccess, #menu button, #content button
+    {
+        font-size: 1rem;
+    }
+
+    .terminal
+    {
+        padding: 10px 10px 10px 10px;
+        line-height: 20px;
+    }
 }
